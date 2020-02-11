@@ -16,6 +16,9 @@ alias gpf='git push --force'
 alias gpl='git pull'
 alias gpu='git push -u origin'
 
+# Jekyll Alias 
+alias jekserve='bundle exec jekyll serve'
+
 # NPM Alias
 alias ni='npm init'
 alias ns='npm start'
