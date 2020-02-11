@@ -14,6 +14,7 @@ alias ga='git add -A'
 alias gp='git push'
 alias gpf='git push --force'
 alias gpl='git pull'
+alias gpu='git push -u origin'
 
 # NPM Alias
 alias ni='npm init'
