@@ -22,6 +22,8 @@ alias gp='git push'
 alias gpf='git push --force'
 alias gpl='git pull'
 alias gpu='git push -u origin'
+alias gc='git commit -m'
+alias gadd='git add'
 
 # Jekyll Alias
 alias jbundle='bundle exec jekyll serve'
