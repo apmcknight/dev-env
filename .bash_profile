@@ -1,10 +1,17 @@
-# Setting PATH for Python 3.7
+#PYTHON 3.7 PATH EXPORT
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
 
+#YARN PATH EXPORT
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+#RUBY PATH EXPORT
+export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=$HOME/.gem/ruby/2.6.0/bin:$PATH
+
+
+# ALIAS STARTS HERE
 
 # Git Alias
 alias g='git'
