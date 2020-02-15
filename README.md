@@ -1,2 +1,2 @@
 # dev-env
-My personal environment configuration files
+My personal environment configuration files 🔨🤓
