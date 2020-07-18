@@ -1,7 +1,7 @@
 {
     "git.ignoreMissingGitWarning": true,
     "window.zoomLevel": 0,
-    "editor.fontSize": 13.5,
+    "editor.fontSize": 14,
     "workbench.colorTheme": "OneLight++",
     "editor.minimap.enabled": false,
     "files.autoSave": "afterDelay",
@@ -12,7 +12,7 @@
     },
     "workbench.iconTheme": "material-icon-theme",
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "terminal.integrated.shell.osx": "/bin/bash",
+    "terminal.integrated.shell.osx": "/bin/zsh",
     "cSpell.enabledLanguageIds": [
         "asciidoc",
         "c",
@@ -46,5 +46,13 @@
         "typescriptreact",
         "yaml",
         "yml"
-    ]
+    ],
+    "extensions.ignoreRecommendations": true,
+    "cSpell.userWords": [
+        "cybersecurity"
+    ],
+    "editor.fontFamily": "Fira Code iScript",
+    "editor.fontLigatures": true,
+    "editor.letterSpacing": 0.5,
+    "workbench.preferredDarkColorTheme": "One Dark Pro"
 }
