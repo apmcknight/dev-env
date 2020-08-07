@@ -97,6 +97,12 @@ source $ZSH/oh-my-zsh.sh
 # CUSTOM ALIASES BEGIN
 # XXXXXXXXXXXXXXXXXXXXX
 
+# Docker
+alias rundocker='open -a "Docker"'
+
+# Ionic
+alias ions='ionic serve'
+
 # Git Alias
 alias g='git'
 alias gi='git init'
@@ -108,6 +114,7 @@ alias gpl='git pull'
 alias gpu='git push -u origin'
 alias gc='git commit -m'
 alias gadd='git add'
+alias trimbranches='git remote update origin --prune' # PRUNES STALE GIT BRANCHES
 
 # Install Automation Aliases:
 # Pulls a fresh template from my template repo on github, and then runs yarn install to update modules, and then yarn start to start the server.
