@@ -153,6 +153,10 @@ alias oslak='open -a slack'
 alias ghd='cd documents/github'
 alias clr='clear'
 
+# DOTNET Alias 
+alias dnserve='dotnet run watch'
+alias dnbuild='dotnet build'
+
 # XXXXXXXXXXXXXXXXXXX
 # CUSTOM ALIASES END
 # XXXXXXXXXXXXXXXXXXX
