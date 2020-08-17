@@ -35,7 +35,7 @@ module.exports = {
     cursorAccentColor: '#FFF',
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
-    cursorShape: 'UNDERLINE',
+    cursorShape: 'BLOCK',
 
     // set to `true` (without backticks and without quotes) for blinking cursor
     cursorBlink: true,
@@ -149,7 +149,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-subliminal-theme", "hypercwd"],
+  plugins: ["hypercwd", "hyper-quit", "hyper-tab-icons", "hyper-solarized-dark"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
