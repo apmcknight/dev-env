@@ -4,36 +4,38 @@
 
 module.exports = {
   config: {
-    // choose either `'stable'` for receiving highly polished,
-    // or `'canary'` for less polished but more frequent updates
-    updateChannel: 'stable',
+     
 
-    // default font size in pixels for all tabs
-    fontSize: 12,
+        // choose either `'stable'` for receiving highly polished,
+        // or `'canary'` for less polished but more frequent updates
+        updateChannel: 'stable',
 
-    // font family with optional fallbacks
-    fontFamily: 'Fira Code iScript, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+        // default font size in pixels for all tabs
+        fontSize: 12,
 
-    // default font weight: 'normal' or 'bold'
-    fontWeight: 'normal',
+        // font family with optional fallbacks
+        fontFamily: 'Powerline, Fira Code iScript',
 
-    // font weight for bold characters: 'normal' or 'bold'
-    fontWeightBold: 'bold',
+        // default font weight: 'normal' or 'bold'
+        fontWeight: 'bold',
 
-    // line height as a relative unit
-    lineHeight: 1,
+        // font weight for bold characters: 'normal' or 'bold'
+        fontWeightBold: 'bold',
+
+        // line height as a relative unit
+        lineHeight: 1,
 
     // letter spacing as a relative unit
-    letterSpacing: 0.5,
+    letterSpacing: 1.0,
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(255,000,000, 0.7)',
+    cursorColor: '#fcea25',
 
     // terminal text color under BLOCK cursor
     cursorAccentColor: '#FFF',
 
     // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
-    cursorShape: 'block',
+    cursorShape: 'UNDERLINE',
 
     // set to `true` (without backticks and without quotes) for blinking cursor
     cursorBlink: true,
@@ -43,7 +45,8 @@ module.exports = {
 
     // terminal background color
     // opacity is only supported on macOS
-    backgroundColor: 'rgba(25,25,25,1)',
+    backgroundColor: '#000',
+    // grey with alpha: backgroundColor: 'rgba(25,25,25,1)',
 
     // terminal selection color
     selectionColor: 'rgba(000, 000, 80, 1)',
@@ -71,25 +74,25 @@ module.exports = {
 
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
-    // an array here instead of a color map object
-    colors: {
-      black: '#000000',
-      red: '#C51E14',
-      green: '#1DC121',
-      yellow: '#C7C329',
-      blue: '#0A2FC4',
-      magenta: '#C839C5',
-      cyan: '#20C5C6',
-      white: '#C7C7C7',
-      lightBlack: '#686868',
-      lightRed: '#FD6F6B',
-      lightGreen: '#67F86F',
-      lightYellow: '#FFFA72',
-      lightBlue: '#6A76FB',
-      lightMagenta: '#FD7CFC',
-      lightCyan: '#68FDFE',
-      lightWhite: '#FFFFFF',
-    },
+    // an array here instead of a color map object{
+    // const colors = {
+    //     black: "#7F7F7F",
+    //     red: "#E15A60",
+    //     green: "#99C794",
+    //     yellow: "#ffe2a9",
+    //     blue: "#6796e6",
+    //     magenta: "#C594C5",
+    //     cyan: "#5FB3B3",
+    //     white: "#d0d0d0",
+    //     lightBlack: "#808080",
+    //     lightRed: "#f1a5ab",
+    //     lightGreen: "#a9cfa4",
+    //     lightYellow: "#ffe2a9",
+    //     lightBlue: "#6699CC",
+    //     lightMagenta: "#C594C5",
+    //     lightCyan: "#91c5d3",
+    //     lightWhite: "#d4d4d4"
+    //   };
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
@@ -146,7 +149,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["verminal"],
+  plugins: ["hyper-subliminal-theme", "hypercwd"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
