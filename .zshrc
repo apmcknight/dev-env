@@ -8,8 +8,14 @@ export ZSH="/Users/AdamMcKnight/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="avit"
+ZSH_THEME="agnoster"
 
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -93,70 +99,80 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# XXXXXXXXXXXXXXXXXXXXX
-# CUSTOM ALIASES BEGIN
-# XXXXXXXXXXXXXXXXXXXXX
+#DOTNET Path Export
+export PATH="$PATH:HOME/./dotnet/tools/"
+
+
+# ALIAS STARTS HERE
+
+alias v='vim'
+
+# IONIC
+alias ions='ionic serve'
 
 # Docker
 alias rundocker='open -a "Docker"'
-
-# Ionic
-alias ions='ionic serve'
 
 # Git Alias
 alias g='git'
 alias gi='git init'
 alias gaom='git add orign master'
 alias ga='git add -A'
+alias trimbranches='git remote update origin --prune' # PRUNES STALE GIT BRANCHES
 alias gp='git push'
 alias gpf='git push --force'
 alias gpl='git pull'
-alias gpu='git push -u origin'
+alias gpu='git push --set-upstream'
 alias gc='git commit -m'
 alias gadd='git add'
-alias trimbranches='git remote update origin --prune' # PRUNES STALE GIT BRANCHES
-
-# Install Automation Aliases:
-# Pulls a fresh template from my template repo on github, and then runs yarn install to update modules, and then yarn start to start the server.
 alias buildnewwebapp='git clone https://github.com/apmcknight/template.git . && yarn install && yarn start'
-alias makenewwebapp='git clone https://github.com/apmcknight/template.git . && yarn install && yarn start'
-alias newtemplate='git clone https://github.com/apmcknight/template.git . && yarn install && yarn start'
 alias addcms='git clone https://github.com/mcknight-digital/mdcms && cd mdcms &&  yarn install'
 alias buildwebcms='git clone https://github.com/apmcknight/template.git . && yarn install && git clone https://github.com/mcknight-digital/mdcms && cd mdcms && yarn install && cd ..'
-alias newtemplatecms='git clone https://github.com/apmcknight/template.git . && yarn install && git clone https://github.com/mcknight-digital/mdcms && cd mdcms && yarn install && cd ..'
 
-# Jekyll Alias:
+# Jekyll Alias
 alias jbundle='bundle exec jekyll serve'
 alias jbuild='jekyll build'
 alias jserve='jekyll serve'
 
-# NPM Alias:
+# NPM Alias
 alias ni='npm init'
 alias ns='npm start'
 alias nt='npm test'
 alias nis='npm install'
 
-# Yarn Alias:
+# Yarn Alias
 alias yr='yarn'
 alias ya='yarn add'
 alias ys='yarn start'
+alias yserve='open -a "Brave Browser" http://localhost:8080 && yarn start'
 alias yt='yarn test'
 alias yi='yarn init'
 
-# Other Alias:
-alias vsc='open -a code'
+# Misc Alias
 alias ovs='open -a visual-studio'
 alias ogc='open -a googlechrome'
 alias osaf='open -a safari'
 alias oatm='open -a atom'
 alias oslak='open -a slack'
+alias ghds='cd ../../Volumes/Story/github'
 alias ghd='cd documents/github'
 alias clr='clear'
+alias devd='cd ../../Volumes/Story'
+alias rmgit='rm -rf .git'
+alias cra='npx create-react-app'
 
-# DOTNET Alias 
-alias dnserve='dotnet run watch'
+# DOTNET Alias
+alias dndev='open . -a "visual studio code" && dotnet watch run'
+alias dnserve='dotnet watch run'
 alias dnbuild='dotnet build'
+alias dnrun='dotnet run'
+alias dnnew='dotnet new'
 
-# XXXXXXXXXXXXXXXXXXX
-# CUSTOM ALIASES END
-# XXXXXXXXXXXXXXXXXXX
+# C++ Alias
+buildcpp ()
+{
+    g++ "$1" && ./a.out
+}
+
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
