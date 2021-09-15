@@ -1,5 +1,0 @@
-# Profile for powershell
-
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme aliens

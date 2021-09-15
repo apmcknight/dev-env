@@ -1,0 +1,9 @@
+# Profile for powershell
+
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-PoshPrompt fish
+
+
+function ghd {cd "C:\Users\adamm\Documents\GitHub"}
+function ghds {cd "D:\Story\Github"}
